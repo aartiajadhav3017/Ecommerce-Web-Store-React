@@ -20,12 +20,12 @@ const ProductCard = ({ id, name, img, text, price, colors }) => {
                         <a href=""><img className={FilteredproductsCSS.cardimg} src={img}></img></a>
                         <h3 className={FilteredproductsCSS.name}>{name}</h3>
                         <div className={FilteredproductsCSS.div}>
-                            <text className={FilteredproductsCSS.text}>{text}</text>
+                            <a  href='' className={FilteredproductsCSS.text}>{text}</a>
                         </div>
 
                         <hr className={FilteredproductsCSS.hr}></hr>
-                        <text className={FilteredproductsCSS.price}>{price}$</text>
-                        <text className={FilteredproductsCSS.color}>
+                        <a href='' className={FilteredproductsCSS.price}>{price}$</a>
+                        <a href='' className={FilteredproductsCSS.color}>
                             {colors?.map((color, index) => {
                                 return (
                                     // <i className={FilteredproductsCSS.color1}
@@ -36,11 +36,10 @@ const ProductCard = ({ id, name, img, text, price, colors }) => {
                                     <img className={FilteredproductsCSS.color1} src=''> </img>
                                 );
                             })}
-                        </text>
+                        </a>
                     </Link>
                 </div>
             </div>
-
         </div>
     )
 }

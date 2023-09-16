@@ -1,5 +1,6 @@
 .filter {
     padding-top: 64px;
+    background-color: #607670;
 }
 
 .filter1 {
@@ -12,7 +13,7 @@
     /* 36px */
     line-height: 2.5rem;
     /* 40px */
-    color: rgb(75 85 99);
+    color: rgb(202, 227, 255);
     font-weight: bold;
     letter-spacing: 0em;
     line-height: 1;
@@ -114,6 +115,7 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
+    background-color:#ffe6e6
 }
 
 .imgpro {
@@ -231,3 +233,6 @@
     border-radius: 5px;
    
 }
+a{
+    text-decoration: unset;
+  }

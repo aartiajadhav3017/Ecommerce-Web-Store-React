@@ -13,14 +13,18 @@
    width: 100px;
    color: gray;
    outline: auto;
+   cursor: pointer;
    
 }
 .btn1:hover{
-    background-color: rgb(134 239 172);
+    background-color:  rgb(81 104 129);
     transition-duration: 300ms;
+    color: white;
+    border-radius: px;
 }
 .text{
-    background-color: rgb(134 239 172);
+    /* background-color: rgb(134 239 172); */
+    background-color: rgb(81 104 129);
     padding: 12px;
     width: 50%;
     justify-content: center;
