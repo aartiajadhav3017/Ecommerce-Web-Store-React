@@ -1,6 +1,6 @@
 .filter {
     padding-top: 64px;
-    background-color: #607670;
+    background-color:#003651;
 }
 
 .filter1 {
@@ -13,7 +13,7 @@
     /* 36px */
     line-height: 2.5rem;
     /* 40px */
-    color: rgb(202, 227, 255);
+    color: white;
     font-weight: bold;
     letter-spacing: 0em;
     line-height: 1;
@@ -48,6 +48,7 @@
 .Main {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .cardimg {
@@ -115,7 +116,7 @@
     align-items: center;
     padding-top: 40px;
     padding-bottom: 40px;
-    background-color:#ffe6e6
+    background-color:#607670;
 }
 
 .imgpro {
@@ -151,7 +152,7 @@
 }
 
 .OFFP {
-    color: rgb(233, 152, 1);
+    color: rgb(255 221 51);
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -164,7 +165,7 @@
 }
 
 .itemtext {
-    color: gray;
+    color: rgb(255, 255, 255);
     font-family: sans-serif;
     font-weight: bold;
     font-size: 1.2rem;
@@ -235,4 +236,98 @@
 }
 a{
     text-decoration: unset;
+  }
+  .producttype{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .producttype2{
+    display: flex;
+    align-items: center;
+  }
+  .btnmap{
+    background-color: rgb(179, 189, 255);
+    outline: auto;
+    color: black;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    margin-right:16px;
+    height: 30px;
+    margin-left: 20px;
+    width: 100%;
+    cursor: pointer;
+
+  }
+  .btnmap:hover{
+    background-color: rgb(255, 222, 168);
+
+  }
+
+  .btnmap1{
+    background-color: rgb(135, 240, 198);
+    outline: auto;
+    color: black;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    margin-right:16px;
+    height: 30px;
+    margin-left: 30px;
+    padding: 5px;
+    width:100px;
+    cursor: pointer;
+
+  }
+  .btnmap1:hover{
+    background-color: rgb(255, 222, 168);
+
+  }
+  .colorid{
+    background-color: rgb(133, 198, 241);
+    outline: auto;
+    color: black;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    margin-right:16px;
+    height: 30px;
+    /* margin-left: 30px; */
+    padding: 5px;
+    width: 22%;
+    cursor: pointer;
+
+  }
+  .colorid:hover{
+    background-color: rgb(255, 222, 168);
+  }
+  .clearfilter{
+    padding-right: 56px;
+    color: black;
+    transition-duration: 300ms;
+    transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    margin-right:16px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .Main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .id {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        background-color:#607670;
+    }
+    .imgpro{
+        height: 448px;
+        border-radius: 8px;
+        /* margin-left: 10%; */
+    }
+    
   }

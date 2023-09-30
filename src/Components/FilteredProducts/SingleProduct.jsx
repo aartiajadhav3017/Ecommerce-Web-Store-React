@@ -3,6 +3,8 @@ import { useSelector } from 'react-redux'
 import { useParams } from 'react-router-dom'
 import FilterProductCSS from "../FilteredProducts/FilteredProductsCSS.module.css";
 import { filteredProducts } from '../../features/slices/productsSlice';
+import { addToCart } from '../../features/slices/cartSlice';
+import { useDispatch } from 'react-redux';
 
 const SingleProduct = () => {
     const product = useSelector((state) => state.products.singleProduct);
@@ -12,7 +14,7 @@ const SingleProduct = () => {
     const [color, setColor] = useState();
 
     const { id } = useParams();
-
+    const dispatch = useDispatch();
 
     return (
 
@@ -88,12 +90,26 @@ const SingleProduct = () => {
                                             })}
                                         </select>
                                     </div>
-                                    <button className={FilterProductCSS.addbutton}>Add to Cart</button>
+                                    <button className={FilterProductCSS.addbutton} onClick={() => dispatch(addToCart({
+                                        id: item.id,
+                                        name: item.name,
+                                        size: size,
+                                        img: item.img,
+                                        text:item.text,
+                                        color: color,
+                                        price: item.price,
+                                        amount: 1,
+                                        totalPrice: item.price,
+                            
+                                    }
+                                    ))}>
+                                        Add to Cart
+                                    </button>
 
                                     <text className={FilterProductCSS.addtotext}>Add to Cart</text>
 
 
-                                   
+
                                 </div>
                             </div>
                         </div>

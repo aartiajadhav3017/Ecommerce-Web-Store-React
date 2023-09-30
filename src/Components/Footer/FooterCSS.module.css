@@ -1,0 +1,31 @@
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hr{
+    height: 1px;
+    width: 80%;
+    background-color:#9ca3af; 
+    opacity: 0.5;
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+    border-style: none;
+}
+.footerdiv{
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    padding-top: 16px;
+}
+.img{
+    height: 80px;
+}
+.p{
+    color: black;
+    font-size: 12px;
+    line-height: 20px;
+    font-family: sans-serif;
+    text-decoration-line: none;
+    text-transform: none;
+}
