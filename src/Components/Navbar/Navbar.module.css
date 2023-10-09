@@ -32,13 +32,15 @@
 .Logoutbtn {
     font-family: sans-serif;
     font-weight: medium;
-    /* justify-tracks:initial; */
     text-align: center;
     margin-right: 2px;
     border-width: 0px;
     background-color: white;
     font-size: medium;
-
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: red;
 }
 
 .img2 {
@@ -79,8 +81,8 @@
 .Offer {
     background-color: black;
     padding: 10px;
-    justify-content: space-around;
     display: flex;
+    justify-content: space-around;
 }
 
 .off {
@@ -204,7 +206,6 @@ body.active-modal {
     letter-spacing: 0em;
     line-height: 1;
     margin-left: 10px;
-    cursor: pointer;
     margin-top: 14px;
     justify-content: center;
     align-items: center;
@@ -279,7 +280,7 @@ body.active-modal {
 
 .footer {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
 }
 

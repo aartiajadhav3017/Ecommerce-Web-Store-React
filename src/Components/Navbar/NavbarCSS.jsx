@@ -41,9 +41,7 @@ const Navbar = () => {
             <img className={NavbarCSS.img} src={logo} alt='store'></img>
           </div>
           <div className={NavbarCSS.Logbtn}>
-            <button className={NavbarCSS.Logoutbtn}>
-              Logout
-            </button>
+           
             <div className={NavbarCSS.img2}>
               <img className={NavbarCSS.heart} src={heart}></img>
               <p className={NavbarCSS.p}>Whish Lists</p>
@@ -60,13 +58,16 @@ const Navbar = () => {
             <div style={{display:'flex'}}>
                 <img className={NavbarCSS.proimg} src={image}>
                 </img>
-                <div onClick={() => dispatch(logout())}>
+                <div>
                   <p className={NavbarCSS.logbtntext}>
                     Hi {name.charAt(0).toUpperCase() + name.slice(1)}
                   </p>
                 </div>
 
             </div>
+            <button  onClick={() => dispatch(logout())} className={NavbarCSS.Logoutbtn}>
+              Logout
+            </button>
           </div>
         </div>
 
@@ -112,7 +113,7 @@ const Navbar = () => {
                         </p>
                         <p className={NavbarCSS.cartname}>
                           <b>Selected color:</b> {" "}
-                          <span className={NavbarCSS.itemcolor} style={{ backgroundColor: item.color }}>{item.color}</span>
+                          <span className={NavbarCSS.itemcolor} style={{ backgroundColor: item.color }}></span>
                         </p>
                         <p className={NavbarCSS.cartname}>
                          <b> Amount:</b>
@@ -125,7 +126,7 @@ const Navbar = () => {
                         
                         <p className={NavbarCSS.cartname}>
                           <b>Total Item Prices:</b> {" "}
-                          <span className={NavbarCSS.itemsize}>{item.totalPrice}$</span>
+                          <span className={NavbarCSS.itemsize}>{item.totalPrice }$</span>
                         </p>
                         
                         <div className={NavbarCSS.remove}>

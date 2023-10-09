@@ -34,7 +34,7 @@ const FilteredProducts = () => {
     console.log("filteredProducts2 " + JSON.stringify(filteredProducts1));
 
     const genderButtons = ["male", "female"];
-    const colorButtons = ["red", "green", "purple", "yellow", "orange", "blue", "black", "brown"]
+    const colorButtons = ["red", "green", "purple", "yellow", "orange", "blue", "black", "brown"];
     const sizeButtons = ["S", "M","L", "XL"];
 
     const dispatch = useDispatch();

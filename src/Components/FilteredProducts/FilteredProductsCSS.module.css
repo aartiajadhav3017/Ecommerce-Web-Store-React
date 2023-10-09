@@ -42,7 +42,6 @@
     border-radius: 8px;
     margin: 5%;
     /* display: flex; */
-
 }
 
 .Main {
@@ -328,6 +327,16 @@ a{
         height: 448px;
         border-radius: 8px;
         /* margin-left: 10%; */
+    }
+    .card1 {
+        height: 31rem;
+        justify-content: center;
+        width: 90%;
+        background-color: #f1f0f0;
+        /* margin-top: 20px; */
+        border-radius: 8px;
+        margin: 5%;
+        /* display: flex; */
     }
     
   }

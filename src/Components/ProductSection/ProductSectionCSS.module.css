@@ -154,7 +154,14 @@
         letter-spacing: 0.010em;
         line-height: 1;
     }
-
+    .card {
+        width: 85%;
+        /* 384px */
+        box-shadow: 0 11px 16px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.2);
+        --tw-shadow-color: #4b5563;
+        margin: 0 auto;
+    }
+    
     .container {
         display: flex;
         flex-direction: column;
